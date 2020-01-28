@@ -1,0 +1,7 @@
+{
+  "name": "ocaml-compiler",
+  "dependencies": {
+    "ocaml": "4.6.x",
+    "dune": "*"
+  }
+}
