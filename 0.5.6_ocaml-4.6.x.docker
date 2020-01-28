@@ -1,0 +1,6 @@
+FROM odis/esy:0.5.6
+
+WORKDIR /var/esy-docker
+COPY --chown=root:nogroup ocaml-4.6.x.json /var/esy-docker
+RUN esy @ocaml-4.6.x install
+RUN esy @ocaml-4.6.x ocaml --version
